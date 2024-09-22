@@ -9,7 +9,7 @@ interface LinkProps
     VariantProps<typeof buttonVariants> {}
 
 const LinkButton = React.forwardRef<HTMLAnchorElement, LinkProps>(
-  ({ className, variant, href, children, ...props }, ref) => {
+  ({ className, variant, href = "", children, ...props }, ref) => {
     return (
       <Link
         href={href}
@@ -32,4 +32,4 @@ const LinkButton = React.forwardRef<HTMLAnchorElement, LinkProps>(
 );
 LinkButton.displayName = "LinkButton";
 
-export { LinkButton, LinkProps };
+export { LinkButton };
