@@ -1,0 +1,302 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Brand Colors */
+    --white: rgb(255, 255, 255);
+    --extra-light: rgb(245, 245, 247);
+    --light-gray: rgb(210, 210, 215);
+    --gray: rgb(128, 128, 128);
+    --dark-gray: rgb(66, 66, 69);
+    --black: rgb(18, 18, 18);
+
+    /* Status Colors */
+    --success: rgb(50, 147, 111);
+    --error: rgb(245, 95, 86);
+
+    /* Font Scale (based on your first screenshot) */
+    --font-scale-perfect-fourth: 1.333;
+
+    /* Font Weights */
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 700;
+
+    /* Heading Sizes */
+    --heading-1-size: 4.1875rem;
+    --heading-1-line-height: 120%;
+    --heading-1-weight: var(--font-weight-semibold);
+    --mobile-heading-1-size: 2.5rem;
+    --mobile-heading-1-line-height: 120%;
+    --mobile-heading-1-weight: var(--font-weight-medium);
+
+    --heading-2-size: 3.125rem;
+    --heading-2-line-height: 120%;
+    --heading-2-weight: var(--font-weight-semibold);
+    --mobile-heading-2-size: 2.125rem;
+    --mobile-heading-2-line-height: 120%;
+    --mobile-heading-2-weight: var(--font-weight-medium);
+
+    --heading-3-size: 2.375rem;
+    --heading-3-line-height: 120%;
+    --heading-3-weight: var(--font-weight-medium);
+    --mobile-heading-3-size: 1.625rem;
+    --mobile-heading-3-line-height: 120%;
+    --mobile-heading-3-weight: var(--font-weight-regular);
+
+    --heading-4-size: 1.75rem;
+    --heading-4-line-height: 120%;
+    --heading-4-weight: var(--font-weight-medium);
+    --mobile-heading-4-size: 1.375rem;
+    --mobile-heading-4-line-height: 120%;
+    --mobile-heading-4-weight: var(--font-weight-regular);
+
+    --heading-5-size: 1.3125rem;
+    --heading-5-line-height: 120%;
+    --heading-5-weight: var(--font-weight-medium);
+    --mobile-heading-5-size: 1.125rem;
+    --mobile-heading-5-line-height: 120%;
+    --mobile-heading-5-weight: var(--font-weight-medium);
+
+    --heading-6-size: 1rem;
+    --heading-6-line-height: 120%;
+    --heading-6-weight: var(--font-weight-medium);
+    --mobile-heading-6-size: 1rem;
+    --mobile-heading-6-line-height: 120%;
+    --mobile-heading-6-weight: var(--font-weight-medium);
+
+    /* Body Text */
+    --body-size: 1rem;
+    --body-line-height: 140%;
+    --body-weight: var(--font-weight-regular);
+    --mobile-body-size: 1rem;
+    --mobile-body-line-height: 140%;
+    --mobile-body-weight: var(--font-weight-regular);
+
+    /* Subtitle */
+    --subtitle-size: 1.125rem;
+    --subtitle-line-height: 120%;
+    --subtitle-weight: var(--font-weight-medium);
+    --mobile-subtitle-size: 1.125rem;
+    --mobile-subtitle-line-height: 140%;
+    --mobile-subtitle-weight: var(--font-weight-medium);
+
+    /* Button */
+    --button-size: 1rem;
+    --button-line-height: 120%;
+    --button-weight: var(--font-weight-medium);
+    --button-transform: uppercase;
+    --mobile-button-size: 0.875rem;
+    --mobile-button-line-height: 100%;
+    --mobile-button-weight: var(--font-weight-medium);
+    --mobile-button-transform: uppercase;
+
+    /* Links */
+    --link-size: 1rem;
+    --link-line-height: 120%;
+    --link-weight: var(--font-weight-medium);
+    --mobile-link-size: 0.875rem;
+    --mobile-link-line-height: 120%;
+    --mobile-link-weight: var(--font-weight-medium);
+
+    /* Overline */
+    --overline-size: 0.875rem;
+    --overline-line-height: 120%;
+    --overline-weight: var(--font-weight-medium);
+    --overline-transform: uppercase;
+    --mobile-overline-size: 0.75rem;
+    --mobile-overline-line-height: 120%;
+    --mobile-overline-weight: var(--font-weight-medium);
+    --mobile-overline-transform: uppercase;
+
+    /* Caption */
+    --caption-size: 0.875rem;
+    --caption-line-height: 120%;
+    --caption-weight: var(--font-weight-regular);
+    --mobile-caption-size: 0.875rem;
+    --mobile-caption-line-height: 120%;
+    --mobile-caption-weight: var(--font-weight-regular);
+
+    /* Small Caption */
+    --caption-small-size: 0.75rem;
+    --caption-small-line-height: 120%;
+    --caption-small-weight: var(--font-weight-medium);
+    --mobile-caption-small-size: 0.75rem;
+    --mobile-caption-small-line-height: 120%;
+    --mobile-caption-small-weight: var(--font-weight-medium);
+  }
+}
+
+/* Typography Elements */
+
+html {
+  font-size: 18px;
+}
+
+/* Desktop & Tablet */
+h1 {
+  font-size: var(--heading-1-size);
+  line-height: var(--heading-1-line-height);
+  font-weight: var(--heading-1-weight);
+}
+
+h2 {
+  font-size: var(--heading-2-size);
+  line-height: var(--heading-2-line-height);
+  font-weight: var(--heading-2-weight);
+}
+
+h3 {
+  font-size: var(--heading-3-size);
+  line-height: var(--heading-3-line-height);
+  font-weight: var(--heading-3-weight);
+}
+
+h4 {
+  font-size: var(--heading-4-size);
+  line-height: var(--heading-4-line-height);
+  font-weight: var(--heading-4-weight);
+}
+
+h5 {
+  font-size: var(--heading-5-size);
+  line-height: var(--heading-5-line-height);
+  font-weight: var(--heading-5-weight);
+}
+
+h6 {
+  font-size: var(--heading-6-size);
+  line-height: var(--heading-6-line-height);
+  font-weight: var(--heading-6-weight);
+}
+
+body {
+  font-size: var(--body-size);
+  line-height: var(--body-line-height);
+  font-weight: var(--body-weight);
+}
+
+.subtitle {
+  font-size: var(--subtitle-size);
+  line-height: var(--subtitle-line-height);
+  font-weight: var(--subtitle-weight);
+}
+
+button {
+  font-size: var(--button-size);
+  line-height: var(--button-line-height);
+  font-weight: var(--button-weight);
+  text-transform: var(--button-transform);
+}
+
+a {
+  font-size: var(--link-size);
+  line-height: var(--link-line-height);
+  font-weight: var(--link-weight);
+  text-decoration: none;
+}
+
+.overline {
+  font-size: var(--overline-size);
+  line-height: var(--overline-line-height);
+  font-weight: var(--overline-weight);
+  text-transform: var(--overline-transform);
+}
+
+.caption {
+  font-size: var(--caption-size);
+  line-height: var(--caption-line-height);
+  font-weight: var(--caption-weight);
+}
+
+.caption-small {
+  font-size: var(--caption-small-size);
+  line-height: var(--caption-small-line-height);
+  font-weight: var(--caption-small-weight);
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: var(--mobile-heading-1-size);
+    line-height: var(--mobile-heading-1-line-height);
+    font-weight: var(--mobile-heading-1-weight);
+  }
+
+  h2 {
+    font-size: var(--mobile-heading-2-size);
+    line-height: var(--mobile-heading-2-line-height);
+    font-weight: var(--mobile-heading-2-weight);
+  }
+
+  h3 {
+    font-size: var(--mobile-heading-3-size);
+    line-height: var(--mobile-heading-3-line-height);
+    font-weight: var(--mobile-heading-3-weight);
+  }
+
+  h4 {
+    font-size: var(--mobile-heading-4-size);
+    line-height: var(--mobile-heading-4-line-height);
+    font-weight: var(--mobile-heading-4-weight);
+  }
+
+  h5 {
+    font-size: var(--mobile-heading-5-size);
+    line-height: var(--mobile-heading-5-line-height);
+    font-weight: var(--mobile-heading-5-weight);
+  }
+
+  h6 {
+    font-size: var(--mobile-heading-6-size);
+    line-height: var(--mobile-heading-6-line-height);
+    font-weight: var(--mobile-heading-6-weight);
+  }
+
+  body {
+    font-size: var(--mobile-body-size);
+    line-height: var(--mobile-body-line-height);
+    font-weight: var(--mobile-body-weight);
+  }
+
+  .subtitle {
+    font-size: var(--mobile-subtitle-size);
+    line-height: var(--mobile-subtitle-line-height);
+    font-weight: var(--mobile-subtitle-weight);
+  }
+
+  button {
+    font-size: var(--mobile-button-size);
+    line-height: var(--mobile-button-line-height);
+    font-weight: var(--mobile-button-weight);
+    text-transform: var(--mobile-button-transform);
+  }
+
+  a {
+    font-size: var(--mobile-link-size);
+    line-height: var(--mobile-link-line-height);
+    font-weight: var(--mobile-link-weight);
+    text-decoration: none;
+  }
+
+  .overline {
+    font-size: var(--mobile-overline-size);
+    line-height: var(--mobile-overline-line-height);
+    font-weight: var(--mobile-overline-weight);
+    text-transform: var(--mobile-overline-transform);
+  }
+
+  .caption {
+    font-size: var(--mobile-caption-size);
+    line-height: var(--mobile-caption-line-height);
+    font-weight: var(--mobile-caption-weight);
+  }
+
+  .caption-small {
+    font-size: var(--mobile-caption-small-size);
+    line-height: var(--mobile-caption-small-line-height);
+    font-weight: var(--mobile-caption-small-weight);
+  }
+}
